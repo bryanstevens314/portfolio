@@ -20,7 +20,7 @@ export default function Router() {
             }
         ],
         {
-            basename: "/dist",
+            basename: "/",
         }
     );
 
