@@ -1,0 +1,44 @@
+/** @format */
+
+// Import all of Bootstrap's CSS
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/dist/assets/fonts/Raleway.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/dist/assets/fonts/Raleway-Italic.ttf') format('truetype');
+	font-style: italic;
+}
+
+html,
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+* {
+	font-family: Raleway, sans-serif !important;
+	color: white !important;
+}
+
+#root {
+	// background: linear-gradient(to right top, #28354f, #667eb2);
+
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mouse {
+	cursor: pointer;
+}
