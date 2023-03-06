@@ -15,30 +15,245 @@
 	font-style: italic;
 }
 
-html,
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+html {
+	height: 100%;
+	width: 100%;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+}
 * {
 	font-family: Raleway, sans-serif !important;
-	color: white !important;
 }
 
+a {
+	text-decoration: none;
+}
 #root {
-	// background: linear-gradient(to right top, #28354f, #667eb2);
-
-	width: 100%;
-	height: 100%;
 	overflow: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: content-box;
+	overflow-x: auto;
+	overflow-y: auto;
+	background-image: linear-gradient(
+		to right top,
+		rgb(26, 34, 50),
+		rgb(35, 45, 67)
+	);
+	background-image: -webkit-linear-gradient(
+		to right top,
+		rgb(26, 34, 50),
+		rgb(35, 45, 67)
+	);
+	height: 100%;
+	width: 100%;
 }
 
 .mouse {
 	cursor: pointer;
+}
+
+.icon {
+	width: 21px;
+	fill: grey;
+	margin: 7px;
+}
+
+.nav_bar {
+	position: absolute;
+	top: 0px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 10px;
+	background-image: linear-gradient(
+		to right top,
+		rgba(26, 34, 50, 0.95),
+		rgba(35, 45, 67, 0.95)
+	);
+	background-image: -webkit-linear-gradient(
+		to right top,
+		rgba(26, 34, 50, 0.95),
+		rgba(35, 45, 67, 0.95)
+	);
+}
+.footer {
+	height: 100px;
+	width: 100%;
+	color: white;
+}
+.web19201 {
+	height: 100%;
+	width: 100%;
+}
+.about_section {
+	color: white;
+	font-size: 1.4rem;
+	margin-top: 100px;
+	// margin-bottom: 100px;
+}
+.about_section > * {
+	white-space: pre-wrap;
+}
+.about_section > pre {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+pre {
+	overflow: visible;
+}
+.web19201 .bryanStevens {
+	color: rgba(255, 255, 255, 1);
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+	font-size: 3rem;
+	font-weight: 700;
+	font-style: normal;
+	font-family: Raleway, Arial;
+	box-shadow: none;
+	overflow-x: unset;
+	overflow-y: unset;
+	white-space: pre;
+}
+
+.nav_bar > .bryanStevens {
+	font-size: 2rem;
+	margin-left: 7px;
+}
+.about_me {
+	font-size: 2.5rem;
+	color: rgb(203, 213, 225);
+	font-weight: 700;
+}
+.web19201 .softwareEngineer {
+	color: rgb(148, 163, 184);
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+	font-size: 1.7rem;
+	font-weight: 500;
+	font-style: normal;
+	font-family: Raleway, Arial;
+	text-decoration: none;
+	box-shadow: none;
+	overflow-x: unset;
+	overflow-y: unset;
+	white-space: pre;
+}
+
+.web19201 .rectangle1 {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.rectangle1 > * {
+	color: white !important;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.animate {
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 1s linear infinite;
+	-webkit-animation: animate 1s linear infinite;
+	background-image: linear-gradient(to right top, #347fbf, #965478);
+	background-image: -webkit-linear-gradient(to right top, #347fbf, #965478);
+}
+@keyframes animate {
+	0% {
+		left: -200%;
+		top: -200%;
+	}
+	50% {
+		left: 0%;
+		top: 0%;
+	}
+	100% {
+		left: -200%;
+		top: -200%;
+	}
+}
+.avatar {
+	width: 150px;
+	border-radius: 50%;
+}
+.rectangle2 {
+	width: 30%;
+	border-radius: 25px;
+	height: 2px;
+}
+.white {
+	background-color: white;
+}
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44%;
+	margin: 25px;
+	aspect-ratio: 4;
+	background-color: rgb(27, 33, 49);
+	border-radius: 7px;
+	border: 1px solid rgb(64, 64, 64);
+}
+.cell:hover {
+	background-color: rgba(27, 33, 49, 0.5);
+}
+.cell__image {
+	height: 75%;
+	aspect-ratio: 1;
+	border-radius: 25px;
+	background-color: white;
+}
+.cell__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.cell__content > * {
+	font-size: 1rem;
+	color: #e5e7ebcc;
+}
+.cell__name {
+	font-size: 1.5rem;
+	color: white;
+}
+
+.cell__tech {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 5px;
+	border-radius: 25px;
+	background-color: grey;
+	border: 1px solid rgb(64, 64, 64);
+	height: 23px;
+}
+.button {
+	height: 45px;
+	padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 10px;
+
+	background-image: linear-gradient(to right top, #347fbf, #4b91ce);
+	background-image: -webkit-linear-gradient(to right top, #347fbf, #4b91ce);
+	border: 1px solid rgb(64, 64, 64);
+	color: white;
+	font-size: 1rem;
+	margin: 7px;
+}
+.button.code {
+	background-color: grey !important;
+	background-image: none !important;
 }
