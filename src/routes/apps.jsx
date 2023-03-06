@@ -26,7 +26,7 @@ export default function Apps() {
           <div className="about_me animate">Hand Crafted</div>
           <div className="about_me ps-2">Apps</div>
         </div>
-        <div className="w-100 d-flex justify-content-center flex-wrap">
+        <div className="projects w-100 d-flex justify-content-center flex-wrap">
           {/* Projects */}
           <Link
             to={VUSPEX_GO}
@@ -43,7 +43,7 @@ export default function Apps() {
               <div className="cell__description">
                 Conduct virtual inspections & create offline field reports.
               </div>
-              <div className="d-flex align-items-center pt-2">
+              <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
                   React Native
                 </div>
@@ -71,7 +71,7 @@ export default function Apps() {
               <div className="cell__description">
                 AI assisted recipe generation
               </div>
-              <div className="d-flex align-items-center pt-2">
+              <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
                   React Native
                 </div>
@@ -91,7 +91,7 @@ export default function Apps() {
               <div className="cell__description">
                 Connects via bluetooth to control physical hardware
               </div>
-              <div className="d-flex align-items-center pt-2">
+              <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
                   React Native
                 </div>

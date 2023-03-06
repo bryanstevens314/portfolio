@@ -15,6 +15,25 @@
 	font-style: italic;
 }
 
+@media (max-width: 600px) {
+	.cell {
+		width: 90% !important;
+		margin: 10px !important;
+	}
+	.projects {
+		margin-top: 20px;
+	}
+	.about_me {
+		font-size: 2rem !important;
+	}
+	.nav_bar > .bryanStevens {
+		font-size: 1rem !important;
+	}
+	.about_section {
+		width: 90% !important;
+	}
+}
+
 html {
 	height: 100%;
 	width: 100%;
@@ -85,6 +104,20 @@ a {
 		rgba(35, 45, 67, 0.95)
 	);
 }
+.dropdown {
+	position: absolute;
+	top: 46px;
+	background-image: linear-gradient(
+		to right top,
+		rgba(26, 34, 50, 0.95),
+		rgba(35, 45, 67, 0.95)
+	);
+	background-image: -webkit-linear-gradient(
+		to right top,
+		rgba(26, 34, 50, 0.95),
+		rgba(35, 45, 67, 0.95)
+	);
+}
 .footer {
 	height: 100px;
 	width: 100%;
@@ -98,6 +131,7 @@ a {
 	color: white;
 	font-size: 1.4rem;
 	margin-top: 100px;
+	width: 50%;
 	// margin-bottom: 100px;
 }
 .about_section > * {
@@ -210,7 +244,7 @@ pre {
 	background-color: rgba(27, 33, 49, 0.5);
 }
 .cell__image {
-	height: 75%;
+	height: 6rem;
 	aspect-ratio: 1;
 	border-radius: 25px;
 	background-color: white;
@@ -220,7 +254,6 @@ pre {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	height: 100%;
 }
 .cell__content > * {
 	font-size: 1rem;
@@ -239,6 +272,7 @@ pre {
 	background-color: grey;
 	border: 1px solid rgb(64, 64, 64);
 	height: 23px;
+	white-space: nowrap;
 }
 .button {
 	height: 45px;

@@ -15,7 +15,7 @@ export default function About() {
     <div className="web19201 d-flex flex-column align-items-center">
       <NavBar />
 
-      <div className="about_section w-50 d-flex flex-column">
+      <div className="about_section d-flex flex-column">
         <div className="about_me">About Bryan Stevens</div>
         <pre>{ABOUT}</pre>
         <Link to={RESUME} className="about_me" target="_blank" rel="noreferrer">

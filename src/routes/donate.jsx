@@ -23,7 +23,7 @@ export default function Donate() {
     <div className="web19201 d-flex justify-content-center">
       <NavBar />
 
-      <div className="about_section w-50 d-flex flex-column">
+      <div className="about_section d-flex flex-column">
         <div className="about_me">Donate</div>
         <pre>{DONATE}</pre>
         <div className="about_me">Monthly</div>
