@@ -18,6 +18,12 @@ export default function Dropdown({ showDropdown, pathname }) {
         <div>Donate</div>
         <div className={`rectangle2 ${pathname === "/donate" && "white"}`} />
       </Link>
+      <Link to="/supporters" className="mouse rectangle1 d-flex flex-column">
+        <div>Supporters</div>
+        <div
+          className={`rectangle2 ${pathname === "/supporters" && "white"}`}
+        />
+      </Link>
       <Link to="/about" className="mouse rectangle1 d-flex flex-column">
         <div>About</div>
         <div className={`rectangle2 ${pathname === "/about" && "white"}`} />

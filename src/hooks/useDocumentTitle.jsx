@@ -17,6 +17,9 @@ export default function useDocumentTitle() {
       case "/about":
         document.title = "About";
         break;
+      case "/supporters":
+        document.title = "Supporters";
+        break;
       default:
     }
   }, [pathname]);

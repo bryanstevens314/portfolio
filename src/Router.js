@@ -11,6 +11,7 @@ import Main from "./routes/main";
 import Apps from "./routes/apps";
 import Donate from "./routes/donate";
 import About from "./routes/about";
+import Supporters from "./routes/supporters";
 
 
 export default function Router() {
@@ -34,6 +35,11 @@ export default function Router() {
             {
                 path: "/about",
                 element: <About />,
+                errorElement: <ErrorPage />
+            },
+            {
+                path: "/supporters",
+                element: <Supporters />,
                 errorElement: <ErrorPage />
             },
         ],
