@@ -1,6 +1,6 @@
 
 export const LINKEDIN = 'https://www.linkedin.com/in/bryan-stevens314/';
-export const RESUME = 'https://resume.thebryanstevens.com';
+export const RESUME = 'https://bryanstevens314.github.io/resume/bryanstevens.pdf';
 export const GITHUB = 'https://github.com/bryanstevens314';
 
 export const VUSPEX_GO = 'https://apps.apple.com/us/app/vuspex-go/id1556156809';
