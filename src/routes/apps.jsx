@@ -89,7 +89,7 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">ELevel+</div>
               <div className="cell__description">
-                Connects via bluetooth to control physical hardware
+                Connect & control automotive sensors & relays via Bluetooth LE
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -104,8 +104,51 @@ export default function Apps() {
               </div>
             </div>
           </Link>
+          <Link className="cell">
+            <img
+              src="/assets/images/bitcoin_faucet_icon.png"
+              className="cell__image m-3"
+            ></img>
+            <div className="cell__content p-3">
+              <div className="cell__name">Bitcoin Facuet</div>
+              <div className="cell__description">
+                Earn free bitcoin by watching timed ads
+              </div>
+              <div className="d-flex align-items-center pt-2 flex-wrap">
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Objective-C
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  AdMob
+                </div>
+              </div>
+            </div>
+          </Link>
+          <Link className="cell">
+            <img
+              src="/assets/images/love_story_project_icon.png"
+              className="cell__image m-3"
+            ></img>
+            <div className="cell__content p-3">
+              <div className="cell__name">The Love Story Project</div>
+              <div className="cell__description">
+                Photobooth app for weddings and events
+              </div>
+              <div className="d-flex align-items-center pt-2 flex-wrap">
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Objective-C
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  AVFoundation
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Youtube API
+                </div>
+              </div>
+            </div>
+          </Link>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </div>
   );
