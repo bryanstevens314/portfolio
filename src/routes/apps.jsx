@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import Footer from "../components/Footer";
+import PreloadedImage from "../components/PreloadedImage";
 
 export default function Apps() {
   useDocumentTitle();
@@ -35,10 +36,11 @@ export default function Apps() {
             rel="noreferrer"
             className="cell"
           >
-            <img
+            <PreloadedImage
               src="/assets/images/picasso_ai.png"
               className="cell__image m-3"
-            ></img>
+              alt="Picasso.AI"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">Picasso.AI</div>
               <div className="cell__description">
@@ -63,10 +65,11 @@ export default function Apps() {
             rel="noreferrer"
             className="cell"
           >
-            <img
+            <PreloadedImage
               src="/assets/images/vuspex_go_icon.png"
               className="cell__image m-3"
-            ></img>
+              alt="VuSpex GO"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">VuSpex GO</div>
               <div className="cell__description">
@@ -91,10 +94,11 @@ export default function Apps() {
             rel="noreferrer"
             className="cell"
           >
-            <img
+            <PreloadedImage
               src="/assets/images/food_genie_icon.png"
               className="cell__image m-3"
-            ></img>
+              alt="Food Genie"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">Food Genie+</div>
               <div className="cell__description">
@@ -111,10 +115,11 @@ export default function Apps() {
             </div>
           </Link>
           <Link className="cell">
-            <img
+            <PreloadedImage
               src="/assets/images/elevel_icon.png"
               className="cell__image m-3"
-            ></img>
+              alt="ELevel"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">ELevel+</div>
               <div className="cell__description">
@@ -134,10 +139,11 @@ export default function Apps() {
             </div>
           </Link>
           <Link className="cell">
-            <img
+            <PreloadedImage
               src="/assets/images/bitcoin_faucet_icon.png"
               className="cell__image m-3"
-            ></img>
+              alt="Bitcoin Faucet"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">Bitcoin Facuet</div>
               <div className="cell__description">
@@ -154,10 +160,11 @@ export default function Apps() {
             </div>
           </Link>
           <Link className="cell">
-            <img
+            <PreloadedImage
               src="/assets/images/love_story_project_icon.png"
               className="cell__image m-3"
-            ></img>
+              alt="The Love Story Project"
+            />
             <div className="cell__content p-3">
               <div className="cell__name">The Love Story Project</div>
               <div className="cell__description">
