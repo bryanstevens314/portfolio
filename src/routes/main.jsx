@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import Footer from "../components/Footer";
+import PreloadedImage from "../components/PreloadedImage";
 
 export default function Main() {
   useDocumentTitle();
@@ -17,8 +18,8 @@ export default function Main() {
       <NavBar />
 
       <div className="about_section d-flex flex-column justify-content-center align-items-center">
-        <img
-          className="mouse avatar "
+        <PreloadedImage
+          className="mouse avatar"
           src="/assets/images/bryan_stevens.png"
           alt="logo"
         />
