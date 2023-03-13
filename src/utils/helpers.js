@@ -3,6 +3,7 @@ export const LINKEDIN = 'https://www.linkedin.com/in/bryan-stevens314/';
 export const RESUME = 'https://bryanstevens314.github.io/resume/bryanstevens.pdf';
 export const GITHUB = 'https://github.com/bryanstevens314';
 
+export const PICASSO_AI = 'https://warm-unicorn-3933ee.netlify.app';
 export const VUSPEX_GO = 'https://apps.apple.com/us/app/vuspex-go/id1556156809';
 export const FOOD_GENIE = 'https://apps.apple.com/us/app/food-genie/id1672482056';
 export const BUY_ME_A_COFFEE = 'https://www.buymeacoffee.com/bstevens';

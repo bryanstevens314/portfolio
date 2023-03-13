@@ -5,6 +5,7 @@ import {
   FOOD_GENIE,
   GITHUB,
   LINKEDIN,
+  PICASSO_AI,
   RESUME,
   VUSPEX_GO,
 } from "../utils/helpers";
@@ -28,6 +29,34 @@ export default function Apps() {
         </div>
         <div className="projects w-100 d-flex justify-content-center flex-wrap">
           {/* Projects */}
+          <Link
+            to={PICASSO_AI}
+            target="_blank"
+            rel="noreferrer"
+            className="cell"
+          >
+            <img
+              src="/assets/images/picasso_ai.png"
+              className="cell__image m-3"
+            ></img>
+            <div className="cell__content p-3">
+              <div className="cell__name">Picasso.AI</div>
+              <div className="cell__description">
+                Generate realistic images from text descriptions.
+              </div>
+              <div className="d-flex align-items-center pt-2 flex-wrap">
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  React
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Redux
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  OpenAI
+                </div>
+              </div>
+            </div>
+          </Link>
           <Link
             to={VUSPEX_GO}
             target="_blank"
@@ -89,7 +118,7 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">ELevel+</div>
               <div className="cell__description">
-                Connect & control automotive sensors & relays via Bluetooth LE
+                Connect & control automotive sensors & relays via Bluetooth LE.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -112,7 +141,7 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">Bitcoin Facuet</div>
               <div className="cell__description">
-                Earn free bitcoin by watching timed ads
+                Earn free bitcoin by watching timed ads.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -132,7 +161,7 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">The Love Story Project</div>
               <div className="cell__description">
-                Photobooth app for weddings and events
+                Photobooth app for weddings and events.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
