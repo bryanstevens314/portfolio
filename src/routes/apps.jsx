@@ -30,6 +30,34 @@ export default function Apps() {
         </div>
         <div className="projects w-100 d-flex justify-content-center flex-wrap">
           {/* Projects */}
+          <Link className="cell">
+            <PreloadedImage
+              src="/assets/images/tldr.png"
+              className="cell__image m-3"
+              alt="TL;DR"
+            />
+            <div className="cell__content p-3">
+              <div className="cell__name">TL;DR</div>
+              <div className="cell__description">
+                Create summaries of any webpage or Youtube video. Powered by
+                ChatGPT.
+              </div>
+              <div className="d-flex align-items-center pt-2 flex-wrap">
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  React
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Redux
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Chat GPT
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Chrome Extension v3
+                </div>
+              </div>
+            </div>
+          </Link>
           <Link
             to={PICASSO_AI}
             target="_blank"
@@ -59,6 +87,27 @@ export default function Apps() {
               </div>
             </div>
           </Link>
+          <Link className="cell">
+            <PreloadedImage
+              src="/assets/images/VuSpex-header.png"
+              className="cell__image m-3"
+              alt="VuSpex Chrome Extension"
+            />
+            <div className="cell__content p-3">
+              <div className="cell__name">VuSpex Chrome Extension</div>
+              <div className="cell__description">
+                Dynamically injects an "Inspect Now" button onto the page when
+                specific conditions are met. Initiate a live virtual inspection
+                using data obtained from the web page including permit &
+                inspection number.
+              </div>
+              <div className="d-flex align-items-center pt-2 flex-wrap">
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Chrome Extension v3
+                </div>
+              </div>
+            </div>
+          </Link>
           <Link
             to={VUSPEX_GO}
             target="_blank"
@@ -73,7 +122,8 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">VuSpex GO</div>
               <div className="cell__description">
-                Conduct virtual inspections & create offline field reports.
+                Conduct virtual inspections & create Offline Field Reports
+                (OFR).
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -102,7 +152,7 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">Food Genie+</div>
               <div className="cell__description">
-                AI assisted recipe generation
+                AI assisted recipe generation. Powered by Chat GPT.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -110,6 +160,9 @@ export default function Apps() {
                 </div>
                 <div className="cell__tech d-flex justify-content-center align-items-center">
                   Redux
+                </div>
+                <div className="cell__tech d-flex justify-content-center align-items-center">
+                  Chat GPT
                 </div>
               </div>
             </div>
@@ -123,7 +176,8 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">ELevel+</div>
               <div className="cell__description">
-                Connect & control automotive sensors & relays via Bluetooth LE.
+                Connects & manages automotive sensors & relays through advanced
+                Bluetooth LE technology.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
@@ -147,14 +201,12 @@ export default function Apps() {
             <div className="cell__content p-3">
               <div className="cell__name">Bitcoin Facuet</div>
               <div className="cell__description">
-                Earn free bitcoin by watching timed ads.
+                Earn free Bitcoin by engaging with timed ads, unlocking a simple
+                and rewarding way to accumulate digital currency.
               </div>
               <div className="d-flex align-items-center pt-2 flex-wrap">
                 <div className="cell__tech d-flex justify-content-center align-items-center">
                   Objective-C
-                </div>
-                <div className="cell__tech d-flex justify-content-center align-items-center">
-                  AdMob
                 </div>
               </div>
             </div>
