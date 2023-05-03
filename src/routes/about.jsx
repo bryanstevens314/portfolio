@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import PropTypes from "prop-types";
 
-import { ABOUT, GITHUB, LINKEDIN, RESUME } from "../utils/helpers";
+import { ABOUT, FIVERR, RESUME, UPWORK } from "../utils/helpers";
 import Email from "../components/Email";
 import Github from "../components/Github";
 import { Link } from "react-router-dom";
@@ -20,6 +20,12 @@ export default function About() {
         <pre>{ABOUT}</pre>
         <Link to={RESUME} className="about_me" target="_blank" rel="noreferrer">
           Resume
+        </Link>
+        <Link to={UPWORK} className="about_me" target="_blank" rel="noreferrer">
+          Upwork
+        </Link>
+        <Link to={FIVERR} className="about_me" target="_blank" rel="noreferrer">
+          Fiverr
         </Link>
         <Footer />
       </div>

@@ -1,17 +1,13 @@
-import React, { useCallback } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 
 import {
   BUY_ME_A_COFFEE,
-  DONATE,
-  GITHUB,
+  DONATE_TEXT,
+  FIVERR,
   GITHUB_SPONSORS,
-  LINKEDIN,
   PAYPAL,
-  RESUME,
+  UPWORK,
 } from "../utils/helpers";
-import Email from "../components/Email";
-import Github from "../components/Github";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
@@ -25,7 +21,20 @@ export default function Donate() {
 
       <div className="about_section d-flex flex-column">
         <div className="about_me">Donate</div>
-        <pre>{DONATE}</pre>
+        <pre>{DONATE_TEXT}</pre>
+        <div className="about_me">Hire Me</div>
+        <ul>
+          <li>
+            <Link to={UPWORK} target="_blank" rel="noreferrer">
+              <div>Upwork</div>
+            </Link>
+          </li>
+          <li>
+            <Link to={FIVERR} target="_blank" rel="noreferrer">
+              <div>Fiverr</div>
+            </Link>
+          </li>
+        </ul>
         <div className="about_me">Monthly</div>
         <ul>
           <li>
