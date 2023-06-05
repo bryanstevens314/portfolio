@@ -30,7 +30,7 @@ export default function Apps() {
         </div>
         <div className="projects w-100 d-flex justify-content-center flex-wrap">
           {/* Projects */}
-          <Link className="cell">
+          <Link className="cell" aria-label="View TL;DR">
             <PreloadedImage
               src="/assets/images/tldr.webp"
               className="cell__image m-3"
@@ -63,6 +63,7 @@ export default function Apps() {
             target="_blank"
             rel="noreferrer"
             className="cell"
+            aria-label="View Picasso.AI"
           >
             <PreloadedImage
               src="/assets/images/picasso_ai.webp"
@@ -87,7 +88,7 @@ export default function Apps() {
               </div>
             </div>
           </Link>
-          <Link className="cell">
+          <Link className="cell" aria-label="View VuSpex Chrome Extension">
             <PreloadedImage
               src="/assets/images/VuSpex-header.webp"
               className="cell__image m-3"
@@ -113,6 +114,7 @@ export default function Apps() {
             target="_blank"
             rel="noreferrer"
             className="cell"
+            aria-label="View VuSpex GO"
           >
             <PreloadedImage
               src="/assets/images/vuspex_go_icon.webp"
@@ -143,6 +145,7 @@ export default function Apps() {
             target="_blank"
             rel="noreferrer"
             className="cell"
+            aria-label="View Food Genie+"
           >
             <PreloadedImage
               src="/assets/images/food_genie_icon.webp"
@@ -167,7 +170,7 @@ export default function Apps() {
               </div>
             </div>
           </Link>
-          <Link className="cell">
+          <Link className="cell" aria-label="ELevel+">
             <PreloadedImage
               src="/assets/images/elevel_icon.webp"
               className="cell__image m-3"
@@ -192,7 +195,7 @@ export default function Apps() {
               </div>
             </div>
           </Link>
-          <Link className="cell">
+          <Link className="cell" aria-label="Bitcoin Faucet">
             <PreloadedImage
               src="/assets/images/bitcoin_faucet_icon.webp"
               className="cell__image m-3"
@@ -211,7 +214,7 @@ export default function Apps() {
               </div>
             </div>
           </Link>
-          <Link className="cell">
+          <Link className="cell" aria-label="The Love Story Project">
             <PreloadedImage
               src="/assets/images/love_story_project_icon.webp"
               className="cell__image m-3"

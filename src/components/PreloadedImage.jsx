@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import loading from "../../dist/assets/lottie/loading.json";
 
@@ -13,6 +13,7 @@ const defaultOptions = {
 
 export default function PreloadedImage({ src, alt, className }) {
   const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     let img = new Image();
     img.src = src;

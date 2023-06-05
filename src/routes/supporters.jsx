@@ -19,7 +19,7 @@ export default function Supporters() {
           positive impact. Your support will help me to continue learning,
           growing, and making a difference in the industry.
         </pre>
-        <Link to={DONATE} className="about_me">
+        <Link to={DONATE} className="about_me" aria-label="Donate">
           Donate
         </Link>
         <Footer />

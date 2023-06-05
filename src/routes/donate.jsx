@@ -25,12 +25,22 @@ export default function Donate() {
         <div className="about_me">Hire Me</div>
         <ul>
           <li>
-            <Link to={UPWORK} target="_blank" rel="noreferrer">
+            <Link
+              to={UPWORK}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View my Upwork profile"
+            >
               <div>Upwork</div>
             </Link>
           </li>
           <li>
-            <Link to={FIVERR} target="_blank" rel="noreferrer">
+            <Link
+              to={FIVERR}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View my Fiverr profile"
+            >
               <div>Fiverr</div>
             </Link>
           </li>
@@ -38,7 +48,12 @@ export default function Donate() {
         <div className="about_me">Monthly</div>
         <ul>
           <li>
-            <Link to={GITHUB_SPONSORS} target="_blank" rel="noreferrer">
+            <Link
+              to={GITHUB_SPONSORS}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Github Sponsors"
+            >
               <div>GitHub Sponsors</div>
             </Link>
           </li>
@@ -46,12 +61,22 @@ export default function Donate() {
         <div className="about_me">One Time</div>
         <ul>
           <li>
-            <Link to={BUY_ME_A_COFFEE} target="_blank" rel="noreferrer">
+            <Link
+              to={BUY_ME_A_COFFEE}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Buy Me A Coffee"
+            >
               <div>BuyMeACoffee.com</div>
             </Link>
           </li>
           <li>
-            <Link to={PAYPAL} target="_blank" rel="noreferrer">
+            <Link
+              to={PAYPAL}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="My Paypal"
+            >
               <div>My Paypal</div>
             </Link>
           </li>

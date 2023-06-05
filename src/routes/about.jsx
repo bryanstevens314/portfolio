@@ -18,13 +18,31 @@ export default function About() {
       <div className="about_section d-flex flex-column">
         <div className="about_me">About Bryan Stevens</div>
         <pre>{ABOUT}</pre>
-        <Link to={RESUME} className="about_me" target="_blank" rel="noreferrer">
+        <Link
+          to={RESUME}
+          className="about_me"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View my resume"
+        >
           Resume
         </Link>
-        <Link to={UPWORK} className="about_me" target="_blank" rel="noreferrer">
+        <Link
+          to={UPWORK}
+          className="about_me"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View my Upwork profile"
+        >
           Upwork
         </Link>
-        <Link to={FIVERR} className="about_me" target="_blank" rel="noreferrer">
+        <Link
+          to={FIVERR}
+          className="about_me"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View my Fiverr profile"
+        >
           Fiverr
         </Link>
         <Footer />

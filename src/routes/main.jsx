@@ -1,8 +1,6 @@
-import React, { useCallback } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 
-import { GITHUB, LINKEDIN, RESUME } from "../utils/helpers";
-import Email from "../components/Email";
+import { GITHUB } from "../utils/helpers";
 import Github from "../components/Github";
 import Apps from "../components/Apps";
 import { Link } from "react-router-dom";
@@ -29,6 +27,7 @@ export default function Main() {
           <Link
             className="button d-flex justify-content-center align-items-center"
             to="/apps"
+            aria-label="View my apps"
           >
             <Apps fill="white" />
             Apps
@@ -38,6 +37,7 @@ export default function Main() {
             to={GITHUB}
             target="_blank"
             rel="noreferrer"
+            aria-label="View my Github"
           >
             <Github fill="white" />
             Code

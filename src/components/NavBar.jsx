@@ -19,16 +19,24 @@ export default function NavBar() {
 
   return (
     <div className="nav_bar w-100 p-1 d-flex align-items-center justify-content-between">
-      <Link to="/" className="mouse bryanStevens">
+      <Link to="/" className="mouse bryanStevens" aria-label="Navigate home">
         {displayName}
       </Link>
       {width > 600 ? (
         <div className="d-flex align-items-center align-items-center">
-          <Link to="/apps" className="mouse rectangle1 d-flex flex-column">
+          <Link
+            to="/apps"
+            className="mouse rectangle1 d-flex flex-column"
+            aria-label="Read about my apps"
+          >
             <div>Apps</div>
             <div className={`rectangle2 ${pathname === "/apps" && "white"}`} />
           </Link>
-          <Link to="/donate" className="mouse rectangle1 d-flex flex-column">
+          <Link
+            to="/donate"
+            className="mouse rectangle1 d-flex flex-column"
+            aria-label="Donate & support me"
+          >
             <div>Donate</div>
             <div
               className={`rectangle2 ${pathname === "/donate" && "white"}`}
@@ -37,13 +45,18 @@ export default function NavBar() {
           <Link
             to="/supporters"
             className="mouse rectangle1 d-flex flex-column"
+            aria-label="View my supporters"
           >
             <div>Supporters</div>
             <div
               className={`rectangle2 ${pathname === "/supporters" && "white"}`}
             />
           </Link>
-          <Link to="/about" className="mouse rectangle1 d-flex flex-column">
+          <Link
+            to="/about"
+            className="mouse rectangle1 d-flex flex-column"
+            aria-label="Read more about me"
+          >
             <div>About</div>
             <div className={`rectangle2 ${pathname === "/about" && "white"}`} />
           </Link>
