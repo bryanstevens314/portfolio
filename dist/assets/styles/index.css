@@ -30,10 +30,7 @@ body {
 }
 * {
 	font-family: Raleway, sans-serif !important;
-}
-
-a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 #root {
 	overflow: auto;
