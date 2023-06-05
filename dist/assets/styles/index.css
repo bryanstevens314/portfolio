@@ -1,0 +1,68 @@
+/** @format */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/dist/assets/fonts/Raleway.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('/dist/assets/fonts/Raleway-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-display: swap;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+}
+* {
+	font-family: Raleway, sans-serif !important;
+}
+
+a {
+	text-decoration: none;
+}
+#root {
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: content-box;
+	overflow-x: auto;
+	overflow-y: auto;
+	background-image: linear-gradient(
+		to right top,
+		rgb(26, 34, 50),
+		rgb(35, 45, 67)
+	);
+	background-image: -webkit-linear-gradient(
+		to right top,
+		rgb(26, 34, 50),
+		rgb(35, 45, 67)
+	);
+	height: 100%;
+	width: 100%;
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#root::-webkit-scrollbar {
+	display: none;
+}
+.mouse {
+	cursor: pointer;
+}

@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect } from "react";
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import our custom CSS
 import './scss/styles.scss'
 

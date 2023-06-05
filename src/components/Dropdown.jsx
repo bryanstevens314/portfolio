@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GITHUB } from "../utils/helpers";
-import Email from "./Email";
-import Github from "./Github";
 
 export default function Dropdown({ showDropdown, pathname }) {
   if (!showDropdown) {

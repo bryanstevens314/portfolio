@@ -1,39 +1,48 @@
 const path = require("path");
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const source = path.resolve(__dirname, 'src');
 const isDev = process.env.NODE_ENV === "development";
 
-
-module.exports = {
+const createConfig = (modern = true) => ({
   mode: isDev ? "development" : "production",
   context: __dirname,
   entry: [
-    "@babel/polyfill", // enables async-await
     "./src/index.js",
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "[path][name].[hash][ext][query]",
-    filename: '[name].js',
+    filename: modern ? '[name].modern.js' : '[name].legacy.js',
   },
   resolve: {
     extensions: [".js", ".jsx"],
   },
-  devtool: 'inline-source-map',
+  devtool: isDev ? 'inline-source-map' : 'source-map',
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         include: source,
         loader: "babel-loader",
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"],
+          presets: [
+            ["@babel/preset-env", { targets: modern ? { esmodules: true } : "defaults" }],
+            "@babel/preset-react"
+          ],
         },
       },
       {
         test: /\.css$/,
-        // the order of `use` is important!
         use: [{ loader: "style-loader" }, { loader: "css-loader" }],
       },
       {
@@ -62,7 +71,20 @@ module.exports = {
       }
     ],
   },
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     template: './dist/index.html',
+  //     minify: !isDev,
+  //     scriptLoading: 'defer',
+  //     inject: 'body',
+  //     filename: modern ? 'index.html' : 'index-legacy.html',
+  //   }),
+  // ],
   optimization: {
-    usedExports: true
+    splitChunks: {
+      chunks: 'all',
+    },
   }
-};
+});
+
+module.exports = [createConfig(true), createConfig(false)];
