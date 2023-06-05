@@ -20,7 +20,7 @@ export default function Main() {
       <div className="about_section d-flex flex-column justify-content-center align-items-center">
         <PreloadedImage
           className="mouse avatar"
-          src="/assets/images/bryan_stevens.png"
+          src="/assets/images/bryan_stevens.webp"
           alt="logo"
         />
         <div className="mouse bryanStevens animate">Bryan Stevens</div>

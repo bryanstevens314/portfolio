@@ -32,7 +32,7 @@ export default function Apps() {
           {/* Projects */}
           <Link className="cell">
             <PreloadedImage
-              src="/assets/images/tldr.png"
+              src="/assets/images/tldr.webp"
               className="cell__image m-3"
               alt="TL;DR"
             />
@@ -65,7 +65,7 @@ export default function Apps() {
             className="cell"
           >
             <PreloadedImage
-              src="/assets/images/picasso_ai.png"
+              src="/assets/images/picasso_ai.webp"
               className="cell__image m-3"
               alt="Picasso.AI"
             />
@@ -89,7 +89,7 @@ export default function Apps() {
           </Link>
           <Link className="cell">
             <PreloadedImage
-              src="/assets/images/VuSpex-header.png"
+              src="/assets/images/VuSpex-header.webp"
               className="cell__image m-3"
               alt="VuSpex Chrome Extension"
             />
@@ -115,7 +115,7 @@ export default function Apps() {
             className="cell"
           >
             <PreloadedImage
-              src="/assets/images/vuspex_go_icon.png"
+              src="/assets/images/vuspex_go_icon.webp"
               className="cell__image m-3"
               alt="VuSpex GO"
             />
@@ -145,7 +145,7 @@ export default function Apps() {
             className="cell"
           >
             <PreloadedImage
-              src="/assets/images/food_genie_icon.png"
+              src="/assets/images/food_genie_icon.webp"
               className="cell__image m-3"
               alt="Food Genie"
             />
@@ -169,7 +169,7 @@ export default function Apps() {
           </Link>
           <Link className="cell">
             <PreloadedImage
-              src="/assets/images/elevel_icon.png"
+              src="/assets/images/elevel_icon.webp"
               className="cell__image m-3"
               alt="ELevel"
             />
@@ -194,7 +194,7 @@ export default function Apps() {
           </Link>
           <Link className="cell">
             <PreloadedImage
-              src="/assets/images/bitcoin_faucet_icon.png"
+              src="/assets/images/bitcoin_faucet_icon.webp"
               className="cell__image m-3"
               alt="Bitcoin Faucet"
             />
@@ -213,7 +213,7 @@ export default function Apps() {
           </Link>
           <Link className="cell">
             <PreloadedImage
-              src="/assets/images/love_story_project_icon.png"
+              src="/assets/images/love_story_project_icon.webp"
               className="cell__image m-3"
               alt="The Love Story Project"
             />
