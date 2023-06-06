@@ -39,7 +39,7 @@ export default function Main() {
             rel="noreferrer"
             aria-label="View my Github"
           >
-            <Github fill="white" />
+            <Github fill="black" />
             Code
           </Link>
         </div>
