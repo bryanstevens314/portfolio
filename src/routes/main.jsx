@@ -8,6 +8,7 @@ import NavBar from "../components/NavBar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import Footer from "../components/Footer";
 import PreloadedImage from "../components/PreloadedImage";
+import Calendar from "../components/Calendar";
 
 export default function Main() {
   useDocumentTitle();
@@ -43,6 +44,16 @@ export default function Main() {
             Code
           </Link>
         </div>
+        <Link
+          to={"https://calendly.com/b-stevens-bit/15-30-minute-introduction"}
+          className="schedule button mouse d-flex justify-content-center align-items-center"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Schedule a Call"
+        >
+          <Calendar fill={"white"} />
+          <div>Schedule A Call</div>
+        </Link>
         <Footer />
       </div>
     </div>
