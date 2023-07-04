@@ -34,30 +34,14 @@
 	padding-right: 100px;
 	padding-left: 100px;
 	padding-top: 10px;
-	background-image: linear-gradient(
-		to right top,
-		rgba(26, 34, 50, 0.95),
-		rgba(35, 45, 67, 0.95)
-	);
-	background-image: -webkit-linear-gradient(
-		to right top,
-		rgba(26, 34, 50, 0.95),
-		rgba(35, 45, 67, 0.95)
-	);
+	background-image: linear-gradient(to right top, rgba(26, 34, 50, 0.95), rgba(35, 45, 67, 0.95));
+	background-image: -webkit-linear-gradient(to right top, rgba(26, 34, 50, 0.95), rgba(35, 45, 67, 0.95));
 }
 .dropdown {
 	position: absolute;
 	top: 46px;
-	background-image: linear-gradient(
-		to right top,
-		rgba(26, 34, 50, 0.95),
-		rgba(35, 45, 67, 0.95)
-	);
-	background-image: -webkit-linear-gradient(
-		to right top,
-		rgba(26, 34, 50, 0.95),
-		rgba(35, 45, 67, 0.95)
-	);
+	background-image: linear-gradient(to right top, rgba(26, 34, 50, 0.95), rgba(35, 45, 67, 0.95));
+	background-image: -webkit-linear-gradient(to right top, rgba(26, 34, 50, 0.95), rgba(35, 45, 67, 0.95));
 }
 .footer {
 	height: 100px;
@@ -233,4 +217,13 @@ pre {
 	background-color: rgb(192, 192, 192) !important;
 	background-image: none !important;
 	color: black !important;
+}
+
+.schedule {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.schedule > svg {
+	margin-bottom: 10px;
 }
