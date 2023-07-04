@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Email() {
   return (
-    <a href="mailto:b.stevens.bit.com" aria-label="Send me an email">
+    <a href="mailto:b.stevens.bit@gmail.com" aria-label="Send me an email">
       <svg
         className="mouse icon"
         xmlns="http://www.w3.org/2000/svg"
