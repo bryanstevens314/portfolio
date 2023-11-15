@@ -45,7 +45,7 @@ export default function Main() {
           </Link>
         </div>
         <Link
-          to={"https://calendly.com/b-stevens-bit/15-30-minute-introduction"}
+          to={"https://calendly.com/b-stevens-bit/15-to-20-minute-intro-call"}
           className="schedule button mouse d-flex justify-content-center align-items-center"
           target="_blank"
           rel="noreferrer"
